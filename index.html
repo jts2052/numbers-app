@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Arithmetic</title>
+    </head>
+
+    <body>
+        <h1>Arithmetic</h1>
+        <form>
+            <input type="number" id="num1" name="num1" placeholder="Enter a number">
+            <input type="number" id="num2" name="num2" placeholder="Enter a number">
+            <button onclick="add()">=</button>
+            <input type="text" id="result" name="result" placeholder="Result">
+        </form>
+    </body>
+
+    <script>
+        function add(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = parseInt(num1) + parseInt(num2);
+            document.getElementById("result").value = result;
+        }
+    </script>
+
+</html>
